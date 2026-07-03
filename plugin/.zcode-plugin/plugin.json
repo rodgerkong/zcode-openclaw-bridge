@@ -1,0 +1,8 @@
+{
+  "name": "openclaw-bridge",
+  "version": "0.1.0",
+  "description": "让 ZCode 与 OpenClaw 实例对话和操作。以联系人为粒度（实例+agent），支持多实例、对话、读操作直放行、写操作二次确认。",
+  "author": { "name": "Rodger" },
+  "license": "MIT",
+  "skills": "skills"
+}

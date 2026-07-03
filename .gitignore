@@ -1,0 +1,29 @@
+# ── 项目本地状态（不进 git，仅本地参考用）─────────────────────
+STATE.md
+sessions/
+
+# ── 系统/编辑器垃圾 ─────────────────────────────────────────
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# ── bridge 本地运行时数据（用户数据，独立于插件）──────────────
+# 安装后会在 $HOME/.config/openclaw-bridge/ 下生成，此处不涉及
+# 但为防误提交，列出可能的位置
+install.log
+
+# ── plugin/ 内的 PoC 与 legacy（不进发布）────────────────────
+plugin/poc/
+plugin/skills/openclaw-bridge/scripts/bridge.sh
+plugin/skills/openclaw-bridge/scripts/bridge.py
+plugin/skills/openclaw-bridge/scripts/contacts.template.json.bak
+plugin/**/__pycache__/
+plugin/**/*.pyc
+
+# ── node ────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*

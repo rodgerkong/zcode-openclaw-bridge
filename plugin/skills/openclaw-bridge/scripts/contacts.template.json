@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "default": "local-main",
+  "contacts": {
+    "local-main": {
+      "url": "ws://127.0.0.1:18789",
+      "token": "PASTE-YOUR-DEVICE-TOKEN-HERE",
+      "agent": "main",
+      "note": "本机主 agent（示例）"
+    },
+    "remote-main": {
+      "url": "ws://YOUR-REMOTE-HOST:18789",
+      "token": "PASTE-YOUR-DEVICE-TOKEN-HERE",
+      "agent": "main",
+      "note": "远端实例（示例）"
+    }
+  }
+}

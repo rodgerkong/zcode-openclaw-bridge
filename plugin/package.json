@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@rodger/openclaw-bridge-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "ZCode 插件：与 OpenClaw 实例对话和操作。源码在 openclaw-chat 项目，通过 install.sh 部署。"
+}
