@@ -10,21 +10,11 @@
 
 ## 快速开始
 
-1. 从 [Release v0.1.0](https://github.com/rodgerkong/zcode-openclaw-bridge/releases/tag/v0.1.0) 下载 `openclaw-bridge-plugin-0.1.0.zip`
-2. 解压后按系统运行安装脚本（macOS/Linux `install.sh`、Windows `install.ps1`）
-3. 详见 **`plugin/README.md`**（插件的完整安装/使用文档，随源码一起维护）
+把 release zip 直接发给 ZCode，让它自行安装：
 
-```bash
-# macOS / Linux
-unzip openclaw-bridge-plugin-0.1.0.zip -d openclaw-bridge-plugin
-cd openclaw-bridge-plugin && bash install.sh
+> 📦 下载 [openclaw-bridge-plugin-0.1.0.zip](https://github.com/rodgerkong/zcode-openclaw-bridge/releases/tag/v0.1.0) 发给 ZCode
 
-# Windows (PowerShell)
-Expand-Archive openclaw-bridge-plugin-0.1.0.zip
-cd openclaw-bridge-plugin
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\install.ps1
-```
+剩下的 ZCode 会根据 `plugin/README.md` 自行完成解压、运行 `install.sh` / `install.ps1`、自检、配置首联系人等步骤。
 
 ## 为什么需要这个插件
 
@@ -46,8 +36,6 @@ zcode-openclaw-bridge/
 └── .gitignore
 ```
 
-**研究笔记与决策记录**：已迁移到独立私有仓库 [`rodgerkong/zcode-openclaw-bridge-internal`](https://github.com/rodgerkong/zcode-openclaw-bridge-internal)。`docs/` 目录不再随本仓库发布。
-
 **不进 git 的内容**（本地保留，`.gitignore` 排除）：
 - `STATE.md` — 个人项目状态记录
 - `sessions/` — 开发会话归档
@@ -63,13 +51,6 @@ zcode-openclaw-bridge/
 | python / 任何 npm 包 | ❌ | 零外部依赖 |
 
 ⚠️ ZCode 是 Electron 应用（内部自带 node），但**不暴露到系统 PATH**。必须单独装 node 到 PATH。
-
-## 测试与质量
-
-本项目经 3 轮 Windows 原生环境回归测试，详见仓库 [Issues](https://github.com/rodgerkong/zcode-openclaw-bridge/issues)：
-- #1: v1 安装测试报告（初轮发现 5 个问题）
-- #2: v2 回归测试（#4 根因更正）
-- #3: v3 回归测试（#4 验证修复，新发现 #6 退出码）
 
 ## 协议
 
