@@ -29,3 +29,11 @@
 - **#5** 脚本退出码 = 1（best-effort 探测失败污染退出码）→ 末尾显式 `exit 0`
 
 [0.1.0]: https://github.com/rodgerkong/zcode-openclaw-bridge/releases/tag/v0.1.0
+
+## Unreleased
+
+### 变更
+- **docs/ 已迁移到独立私有仓库** [`rodgerkong/zcode-openclaw-bridge-internal`](https://github.com/rodgerkong/zcode-openclaw-bridge-internal)
+  - 原因：研究笔记含内部网络细节（真实 IP/Tailscale 配置）、设备配对凭证（token 截断/字段名），不属于交付物
+  - 公开仓库 `docs/` 目录已删除，git history 将通过 filter-repo 清理
+  - 私有仓库迁移完成后，公开仓库将只含源码、协议、用户面向文档

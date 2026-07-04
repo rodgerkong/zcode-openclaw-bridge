@@ -39,13 +39,14 @@ zcode-openclaw-bridge/
 ├── README.md                    # 本文件（GitHub 入口）
 ├── LICENSE                      # MIT
 ├── CHANGELOG.md                 # 版本变更记录
-├── docs/                        # 研究报告与决策记录
 ├── plugin/                      # 插件源码（核心交付物）
 │   ├── README.md                # 插件完整安装/使用说明
 │   ├── install.sh / install.ps1 # 跨平台安装脚本
 │   └── skills/openclaw-bridge/  # skill 主体
 └── .gitignore
 ```
+
+**研究笔记与决策记录**：已迁移到独立私有仓库 [`rodgerkong/zcode-openclaw-bridge-internal`](https://github.com/rodgerkong/zcode-openclaw-bridge-internal)。`docs/` 目录不再随本仓库发布。
 
 **不进 git 的内容**（本地保留，`.gitignore` 排除）：
 - `STATE.md` — 个人项目状态记录
