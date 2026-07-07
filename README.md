@@ -36,12 +36,6 @@ zcode-openclaw-bridge/
 └── .gitignore
 ```
 
-**不进 git 的内容**（本地保留，`.gitignore` 排除）：
-- `STATE.md` — 个人项目状态记录
-- `sessions/` — 开发会话归档
-- `plugin/poc/` — PoC 参考实现
-- `plugin/.../scripts/bridge.sh`、`bridge.py` — legacy 版本
-
 ## 运行时依赖
 
 | 依赖 | 必须 | 说明 |
